@@ -1,0 +1,218 @@
+﻿<mxfile host="65bd71144e">
+    <diagram name="Sequence - Employee Order Processing" id="seq-employee">
+        <mxGraphModel dx="2951" dy="2049" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="700" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="18" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-10" y="-10" width="1010" height="700" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Sequence Diagram - Xử lý Đơn hàng (Nhân viên)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+                    <mxGeometry x="275" y="20" width="450" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value=":DichVuThongBao" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="670" y="140" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=none;dashed=1;html=1;rounded=0;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="739.5" y="650" as="sourcePoint"/>
+                        <mxPoint x="739.5" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="22" value=":CoSoDuLieu" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" vertex="1" parent="1">
+                    <mxGeometry x="870" y="140" width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="23" value="" style="endArrow=none;dashed=1;html=1;rounded=0;dashPattern=1 3;strokeWidth=2;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="919.5" y="650" as="sourcePoint"/>
+                        <mxPoint x="919.5" y="180" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="24" value="3: SELECT * FROM orders" style="endArrow=block;endFill=1;html=1;rounded=0;exitX=1.02;exitY=0.1;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="52">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="375" y="250" as="sourcePoint"/>
+                        <mxPoint x="920" y="250" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="25" value="4: orders" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;entryX=0.803;entryY=0.149;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="52">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="920" y="270" as="sourcePoint"/>
+                        <mxPoint x="375" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="26" value="8: UPDATE orders SET trang_thai=..." style="endArrow=block;endFill=1;html=1;rounded=0;exitX=0.948;exitY=0.372;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="52">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="375" y="360" as="sourcePoint"/>
+                        <mxPoint x="920" y="360" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="27" value="9: success" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;entryX=1.093;entryY=0.425;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="52">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="920" y="380" as="sourcePoint"/>
+                        <mxPoint x="375" y="380" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="28" value="12: UPDATE ..." style="endArrow=block;endFill=1;html=1;rounded=0;exitX=1.165;exitY=0.602;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="52">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="375" y="450" as="sourcePoint"/>
+                        <mxPoint x="920" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="29" value="15: UPDATE ..." style="endArrow=block;endFill=1;html=1;rounded=0;exitX=1.02;exitY=0.776;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="52">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="375" y="520" as="sourcePoint"/>
+                        <mxPoint x="920" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="30" value="16: notifyCustomer(orderId)" style="endArrow=block;endFill=1;html=1;rounded=0;exitX=1.185;exitY=0.832;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="52">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="375" y="540" as="sourcePoint"/>
+                        <mxPoint x="740" y="540" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="17: sendEmail(&quot;Đơn hàng sẵn sàng&quot;)" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="740" y="560" as="sourcePoint"/>
+                        <mxPoint x="740" y="580" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="830" y="560"/>
+                            <mxPoint x="830" y="580"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="18: emailSent" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="1">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="740" y="600" as="sourcePoint"/>
+                        <mxPoint x="375" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+                    <mxGeometry x="735" y="530" width="10" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="20" y="80" width="40" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="Nhân viên" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="34">
+                    <mxGeometry width="40" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="" style="endArrow=none;dashed=1;html=1;rounded=0;dashPattern=1 3;strokeWidth=2;" edge="1" parent="34">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="19.5" y="570" as="sourcePoint"/>
+                        <mxPoint x="19.5" y="100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="34">
+                    <mxGeometry x="15" y="120" width="10" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="38" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="46" y="210" width="140" height="410" as="geometry"/>
+                </mxCell>
+                <mxCell id="39" value="1: viewAssignedOrders()" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="38">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint as="sourcePoint"/>
+                        <mxPoint x="140" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="40" value="5: displayOrders()" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="38">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="140" y="80" as="sourcePoint"/>
+                        <mxPoint y="80" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="41" value="6: acceptOrder(orderId)" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="38">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint y="110" as="sourcePoint"/>
+                        <mxPoint x="140" y="110" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="42" value="10: markPreparing(orderId)" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="38">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint y="200" as="sourcePoint"/>
+                        <mxPoint x="140" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="43" value="13: markReady(orderId)" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="38">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint y="270" as="sourcePoint"/>
+                        <mxPoint x="140" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="44" value="19: showSuccess(&quot;Đã thông báo khách&quot;)" style="endArrow=open;endFill=0;html=1;rounded=0;dashed=1;" edge="1" parent="38">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint x="140" y="410" as="sourcePoint"/>
+                        <mxPoint y="410" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="45" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="170" y="140" width="100" height="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value=":EmployeeUI" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="45">
+                    <mxGeometry width="100" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="" style="endArrow=none;dashed=1;html=1;rounded=0;dashPattern=1 3;strokeWidth=2;" edge="1" parent="45">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="49.5" y="510" as="sourcePoint"/>
+                        <mxPoint x="49.5" y="40" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="45">
+                    <mxGeometry x="45" y="60" width="10" height="440" as="geometry"/>
+                </mxCell>
+                <mxCell id="49" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="380" y="130" width="110" height="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="50" value=":DichVuDonHang" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="49">
+                    <mxGeometry width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="51" value="" style="endArrow=none;dashed=1;html=1;rounded=0;dashPattern=1 3;strokeWidth=2;" edge="1" parent="49">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="54.5" y="510" as="sourcePoint"/>
+                        <mxPoint x="54.5" y="40" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="52" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="49">
+                    <mxGeometry x="50" y="80" width="10" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="53" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="520" y="140" width="120" height="510" as="geometry"/>
+                </mxCell>
+                <mxCell id="54" value=":DichVuSanPham" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="53">
+                    <mxGeometry width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="" style="endArrow=none;dashed=1;html=1;rounded=0;dashPattern=1 3;strokeWidth=2;" edge="1" parent="53">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="59.5" y="510" as="sourcePoint"/>
+                        <mxPoint x="59.5" y="40" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="56" value="" style="group" vertex="1" connectable="0" parent="1">
+                    <mxGeometry x="250" y="240" width="165" height="270" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="2: getOrdersByEmployee(employeeId)" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="56">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint as="sourcePoint"/>
+                        <mxPoint x="165" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="7: updatetrang_thai(orderId, CONFIRMED)" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="56">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint y="110" as="sourcePoint"/>
+                        <mxPoint x="165" y="110" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="11: updatetrang_thai(orderId, PREPARING)" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="56">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint y="200" as="sourcePoint"/>
+                        <mxPoint x="165" y="200" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="60" value="14: updatetrang_thai(orderId, READY)" style="endArrow=block;endFill=1;html=1;rounded=0;" edge="1" parent="56">
+                    <mxGeometry width="160" relative="1" as="geometry">
+                        <mxPoint y="270" as="sourcePoint"/>
+                        <mxPoint x="165" y="270" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

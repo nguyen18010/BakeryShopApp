@@ -1,0 +1,90 @@
+﻿<mxfile host="app.diagrams.net">
+  <diagram name="Activity - Chatbot" id="activity-chatbot">
+    <mxGraphModel dx="800" dy="900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="title" value="Activity Diagram - Chat với AI Chatbot" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" vertex="1" parent="1">
+          <mxGeometry x="275" y="20" width="300" height="30" as="geometry" />
+        </mxCell>
+
+        <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="405" y="70" width="40" height="40" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act1" value="Mở hộp thoại chat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="345" y="140" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act2" value="Nhập tin nhắn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="345" y="220" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act3" value="Phân tích câu hỏi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="345" y="300" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act4" value="Trích xuất từ khóa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="345" y="380" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act5" value="Tìm kiếm trong&#xa;knowledge base" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="345" y="460" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dec1" value="Tìm thấy&#xa;câu trả lời?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="365" y="540" width="120" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act-not-found" value="Trả lời mặc định&#xa;&quot;Xin lỗi, tôi chưa hiểu&quot;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="560" y="555" width="150" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act6" value="Định dạng câu trả lời" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="345" y="660" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act7" value="Hiển thị câu trả lời" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="345" y="740" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="act8" value="Lưu vào lịch sử chat" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="345" y="820" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="dec2" value="Tiếp tục&#xa;chat?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="370" y="900" width="110" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="end" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeWidth=3;" vertex="1" parent="1">
+          <mxGeometry x="405" y="1010" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="end-inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="412" y="1017" width="26" height="26" as="geometry" />
+        </mxCell>
+
+        <!-- Flows -->
+        <mxCell id="flow1" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="start" target="act1"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow2" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="act1" target="act2"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow3" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="act2" target="act3"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow4" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="act3" target="act4"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow5" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="act4" target="act5"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow6" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="act5" target="dec1"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+
+        <mxCell id="flow-not-found" value="Không" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dec1" target="act-not-found"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow-not-found-back" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="act-not-found" target="act6"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /><Array as="points"><mxPoint x="635" y="685" /></Array></mxGeometry></mxCell>
+
+        <mxCell id="flow7" value="Có" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="dec1" target="act6"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow8" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="act6" target="act7"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="act7" target="act8"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+        <mxCell id="flow10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="act8" target="dec2"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+
+        <mxCell id="flow-loop" value="Có" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="dec2" target="act2"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /><Array as="points"><mxPoint x="250" y="940" /><mxPoint x="250" y="245" /></Array></mxGeometry></mxCell>
+
+        <mxCell id="flow-end" value="Không" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1" source="dec2" target="end"><mxGeometry width="50" height="50" relative="1" as="geometry"><mxPoint x="400" y="600" as="sourcePoint" /><mxPoint x="450" y="550" as="targetPoint" /></mxGeometry></mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

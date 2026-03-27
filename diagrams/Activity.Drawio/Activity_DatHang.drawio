@@ -1,0 +1,270 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36 Edg/142.0.0.0" version="29.2.1">
+  <diagram name="Activity Diagram - Place Order" id="activity-diagram">
+    <mxGraphModel dx="1028" dy="558" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1400" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" value="Activity Diagram - Quy Trình Đặt Hàng" vertex="1">
+          <mxGeometry height="30" width="300" x="350" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-customer" parent="1" style="swimlane;startSize=30;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Khách hàng" vertex="1">
+          <mxGeometry height="1270" width="280" x="40" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="start" parent="lane-customer" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="act-browse" parent="lane-customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Xem danh sách bánh" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="act-add-cart" parent="lane-customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Thêm bánh vào&#xa;giỏ hàng" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="decision-more" parent="lane-customer" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Tiếp tục&#xa;mua?" vertex="1">
+          <mxGeometry height="80" width="120" x="80" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="act-checkout" parent="lane-customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Tiến hành đặt hàng" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="decision-login" parent="lane-customer" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Đã đăng&#xa;nhập?" vertex="1">
+          <mxGeometry height="80" width="120" x="80" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="act-login" parent="lane-customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Đăng nhập" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="act-enter-dia_chi" parent="lane-customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Nhập địa chỉ&#xa;giao hàng" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="act-select-payment" parent="lane-customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Chọn phương thức&#xa;thanh toán" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="act-make-payment" parent="lane-customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Thực hiện&#xa;thanh toán" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="act-view-confirm" parent="lane-customer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Xem thông báo&#xa;xác nhận" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="flow23" edge="1" parent="lane-customer" source="act-view-confirm" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="360" y="1170" as="sourcePoint" />
+            <mxPoint x="139.99999999999977" y="1220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lane-system" parent="1" style="swimlane;startSize=30;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="Hệ thống" vertex="1">
+          <mxGeometry height="1270" width="320" x="320" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="act-validate-cart" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Xác thực giỏ hàng" vertex="1">
+          <mxGeometry height="50" width="160" x="80" y="390" as="geometry" />
+        </mxCell>
+        <mxCell id="act-check-stock" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Kiểm tra tồn kho" vertex="1">
+          <mxGeometry height="50" width="160" x="80" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="decision-stock" parent="lane-system" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Còn hàng?" vertex="1">
+          <mxGeometry height="80" width="120" x="100" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="act-calculate-total" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Tính tổng giá trị&#xa;đơn hàng" vertex="1">
+          <mxGeometry height="50" width="160" x="80" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="act-create-order" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Tạo đơn hàng" vertex="1">
+          <mxGeometry height="50" width="160" x="80" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="act-process-payment" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Xử lý thanh toán" vertex="1">
+          <mxGeometry height="50" width="160" x="80" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="decision-payment" parent="lane-system" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Thanh toán&#xa;thành công?" vertex="1">
+          <mxGeometry height="80" width="120" x="100" y="1110" as="geometry" />
+        </mxCell>
+        <mxCell id="act-update-stock" parent="lane-system" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Cập nhật tồn kho" vertex="1">
+          <mxGeometry height="50" width="160" x="80" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="lane-admin" parent="1" style="swimlane;startSize=30;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1" value="Admin/Nhân viên" vertex="1">
+          <mxGeometry height="1270" width="280" x="640" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="act-send-email" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Gửi email xác nhận" vertex="1">
+          <mxGeometry height="50" width="160" x="100" y="1125" as="geometry" />
+        </mxCell>
+        <mxCell id="act-notify-admin" parent="lane-admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Thông báo đơn hàng mới" vertex="1">
+          <mxGeometry height="50" width="160" x="60" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="flow1" edge="1" parent="1" source="start" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-browse" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="700" as="sourcePoint" />
+            <mxPoint x="450" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow2" edge="1" parent="1" source="act-browse" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-add-cart" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="700" as="sourcePoint" />
+            <mxPoint x="450" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow3" edge="1" parent="1" source="act-add-cart" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="decision-more" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="700" as="sourcePoint" />
+            <mxPoint x="450" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow4-yes" edge="1" parent="1" source="decision-more" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act-browse" value="Có">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="80" y="390" />
+              <mxPoint x="80" y="215" />
+            </Array>
+            <mxPoint x="400" y="500" as="sourcePoint" />
+            <mxPoint x="450" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow5-no" edge="1" parent="1" source="decision-more" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-checkout" value="Không">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="500" as="sourcePoint" />
+            <mxPoint x="450" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow6" edge="1" parent="1" source="act-checkout" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act-validate-cart" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="500" as="sourcePoint" />
+            <mxPoint x="450" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="480" y="537" />
+              <mxPoint x="180" y="537" />
+            </Array>
+            <mxPoint x="480" y="517" as="sourcePoint" />
+            <mxPoint x="180" y="547" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow8-no" edge="1" parent="1" source="decision-login" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-login" value="Chưa">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="600" as="sourcePoint" />
+            <mxPoint x="450" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow9" edge="1" parent="1" source="act-login" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-enter-dia_chi" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="700" as="sourcePoint" />
+            <mxPoint x="450" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow10-yes" edge="1" parent="1" source="decision-login" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act-update-stock" value="Rồi">
+          <mxGeometry height="50" relative="1" width="50" x="0.1905" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="370" y="590" />
+            </Array>
+            <mxPoint x="400" y="700" as="sourcePoint" />
+            <mxPoint x="450" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow11" edge="1" parent="1" source="act-enter-dia_chi" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act-check-stock" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="700" as="sourcePoint" />
+            <mxPoint x="450" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow12" edge="1" parent="1" source="act-check-stock" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="decision-stock" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="800" as="sourcePoint" />
+            <mxPoint x="450" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow13-yes" edge="1" parent="1" source="decision-stock" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-calculate-total" value="Có">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="900" as="sourcePoint" />
+            <mxPoint x="450" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow14-no" edge="1" parent="1" source="decision-stock" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="act-add-cart" value="Hết">
+          <mxGeometry height="50" relative="1" width="50" x="-0.5102" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="340" y="870" />
+              <mxPoint x="340" y="295" />
+            </Array>
+            <mxPoint x="400" y="600" as="sourcePoint" />
+            <mxPoint x="450" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow15" edge="1" parent="1" source="act-calculate-total" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-create-order" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="1000" as="sourcePoint" />
+            <mxPoint x="450" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow16" edge="1" parent="1" source="act-create-order" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="act-select-payment" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="1000" as="sourcePoint" />
+            <mxPoint x="450" y="950" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow17" edge="1" parent="1" source="act-select-payment" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-make-payment" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="1100" as="sourcePoint" />
+            <mxPoint x="450" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow18" edge="1" parent="1" source="act-make-payment" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act-process-payment" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="1100" as="sourcePoint" />
+            <mxPoint x="450" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow19" edge="1" parent="1" source="act-process-payment" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="decision-payment" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="1150" as="sourcePoint" />
+            <mxPoint x="450" y="1100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow20-yes" edge="1" parent="1" source="decision-payment" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="act-send-email" value="Thành công">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="1200" as="sourcePoint" />
+            <mxPoint x="450" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow21-no" edge="1" parent="1" source="decision-payment" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="act-select-payment" value="Thất bại">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="340" y="1230" />
+              <mxPoint x="340" y="1055" />
+            </Array>
+            <mxPoint x="400" y="1100" as="sourcePoint" />
+            <mxPoint x="450" y="1050" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow22" edge="1" parent="1" source="act-send-email" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="act-view-confirm" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="820" y="1280" />
+              <mxPoint x="300" y="1280" />
+              <mxPoint x="300" y="1245" />
+            </Array>
+            <mxPoint x="400" y="1200" as="sourcePoint" />
+            <mxPoint x="450" y="1150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow24" edge="1" parent="1" source="act-validate-cart" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-notify-admin" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="780" y="495" />
+            </Array>
+            <mxPoint x="600" y="600" as="sourcePoint" />
+            <mxPoint x="650" y="550" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="flow25" edge="1" parent="1" source="act-update-stock" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="act-check-stock" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="400" y="700" as="sourcePoint" />
+            <mxPoint x="450" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="PiWDTZt43wHu1BAPSwJP-5" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeWidth=3;" value="" vertex="1">
+          <mxGeometry height="40" width="40" x="160" y="1303" as="geometry" />
+        </mxCell>
+        <mxCell id="PiWDTZt43wHu1BAPSwJP-6" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;" value="" vertex="1">
+          <mxGeometry height="26" width="26" x="167" y="1310" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

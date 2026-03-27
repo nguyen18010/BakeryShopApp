@@ -1,0 +1,279 @@
+﻿<mxfile host="65bd71144e">
+    <diagram name="Activity - Product Management" id="activity-product-mgmt">
+        <mxGraphModel dx="878" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="1200" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Activity Diagram - Quản lý Sản phẩm (Admin)" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="300" y="20" width="400" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="lane-admin" value="Quan tri vien" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="80" y="80" width="220" height="1080" as="geometry"/>
+                </mxCell>
+                <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" parent="lane-admin" vertex="1">
+                    <mxGeometry x="90" y="30" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-select-action" value="Chọn hành động&#xa;(Thêm/Sửa/Xóa)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lane-admin" vertex="1">
+                    <mxGeometry x="50" y="100" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec-action" value="Loại&#xa;hành động?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="lane-admin" vertex="1">
+                    <mxGeometry x="60" y="180" width="100" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="lane-system" value="Hệ thống" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="80" width="340" height="1080" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-add-form" value="Hiển thị form&#xa;thêm sản phẩm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="lane-system" vertex="1">
+                    <mxGeometry x="30" y="180" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-validate-add" value="Xác thực dữ liệu" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="lane-system" vertex="1">
+                    <mxGeometry x="30" y="260" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec-valid-add" value="Hợp lệ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="lane-system" vertex="1">
+                    <mxGeometry x="50" y="340" width="80" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-save-product" value="Lưu sản phẩm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="lane-system" vertex="1">
+                    <mxGeometry x="30" y="440" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-load-product" value="Tải thông tin&#xa;sản phẩm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="lane-system" vertex="1">
+                    <mxGeometry x="180" y="180" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-update-form" value="Hiển thị form sửa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="lane-system" vertex="1">
+                    <mxGeometry x="180" y="260" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-validate-edit" value="Xác thực thay đổi" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="lane-system" vertex="1">
+                    <mxGeometry x="180" y="340" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec-valid-edit" value="Hợp lệ?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="lane-system" vertex="1">
+                    <mxGeometry x="200" y="420" width="80" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-update-db" value="Cập nhật DB" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="lane-system" vertex="1">
+                    <mxGeometry x="180" y="520" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-check-deps" value="Kiểm tra đơn hàng&#xa;liên quan" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="lane-system" vertex="1">
+                    <mxGeometry x="30" y="640" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="dec-has-orders" value="Có đơn&#xa;hàng?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="lane-system" vertex="1">
+                    <mxGeometry x="50" y="720" width="80" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-soft-delete" value="Xóa mềm&#xa;(inactive)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="lane-system" vertex="1">
+                    <mxGeometry x="180" y="730" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-hard-delete" value="Xóa hoàn toàn" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="lane-system" vertex="1">
+                    <mxGeometry x="30" y="820" width="120" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow-soft-del" value="Có" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="lane-system" source="dec-has-orders" edge="1" target="act-soft-delete">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="130" y="740" as="sourcePoint"/>
+                        <mxPoint x="180" y="742.5" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="lane-database" value="Database" style="swimlane;horizontal=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="1" vertex="1">
+                    <mxGeometry x="640" y="80" width="280" height="1080" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-insert-db" value="INSERT sản phẩm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="lane-database" vertex="1">
+                    <mxGeometry x="80" y="440" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-update-record" value="UPDATE sản phẩm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="lane-database" vertex="1">
+                    <mxGeometry x="80" y="520" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-delete-record" value="DELETE sản phẩm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="lane-database" vertex="1">
+                    <mxGeometry x="80" y="820" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-mark-inactive" value="UPDATE&#xa;active = false" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;" parent="lane-database" vertex="1">
+                    <mxGeometry x="80" y="730" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-success" value="Thông báo&#xa;thành công" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="lane-database" vertex="1">
+                    <mxGeometry x="80" y="920" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="end" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeWidth=3;" parent="lane-database" vertex="1">
+                    <mxGeometry x="130" y="1000" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="end-inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;" parent="lane-database" vertex="1">
+                    <mxGeometry x="137" y="1007" width="26" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow-start" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="start" target="act-select-action" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-to-dec" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-select-action" target="dec-action" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-add" value="Thêm" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="dec-action" target="act-add-form" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-add-2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-add-form" target="act-validate-add" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-add-3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-validate-add" target="dec-valid-add" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-invalid-add" value="Không" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" parent="1" source="dec-valid-add" target="act-add-form" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="260" y="455"/>
+                            <mxPoint x="260" y="273"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-add-save" value="Có" style="endArrow=classic;html=1;rounded=0;" parent="1" source="dec-valid-add" target="act-save-product" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-to-db-insert" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-save-product" target="act-insert-db" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-edit" value="Sửa" style="endArrow=classic;html=1;rounded=0;exitX=0.657;exitY=0.15;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="dec-action" target="act-load-product" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="510" y="150" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="250" y="270"/>
+                            <mxPoint x="250" y="240"/>
+                            <mxPoint x="540" y="240"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-edit-2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-load-product" target="act-update-form" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-edit-3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-update-form" target="act-validate-edit" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-edit-4" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-validate-edit" target="dec-valid-edit" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-invalid-edit" value="Không" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="dec-valid-edit" target="act-update-form" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="630" y="535"/>
+                            <mxPoint x="630" y="450"/>
+                            <mxPoint x="630" y="365"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-edit-update" value="Có" style="endArrow=classic;html=1;rounded=0;" parent="1" source="dec-valid-edit" target="act-update-db" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-to-db-update" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-update-db" target="act-update-record" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-delete" value="Xóa" style="endArrow=classic;html=1;rounded=0;" parent="1" source="dec-action" target="act-check-deps" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="190" y="745"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-del-2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-check-deps" target="dec-has-orders" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-hard-del" value="Không" style="endArrow=classic;html=1;rounded=0;" parent="1" source="dec-has-orders" target="act-hard-delete" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-soft-to-db" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-soft-delete" target="act-mark-inactive" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-hard-to-db" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-hard-delete" target="act-delete-record" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-insert-success" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-insert-db" target="act-success" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="870" y="545"/>
+                            <mxPoint x="870" y="1010"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-update-success" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=1;entryDx=0;entryDy=0;" parent="1" source="act-update-record" target="act-success" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="880" y="625"/>
+                            <mxPoint x="900" y="625"/>
+                            <mxPoint x="900" y="820"/>
+                            <mxPoint x="900" y="1050"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-soft-success" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" target="act-success" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="860" y="840" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="880" y="840"/>
+                            <mxPoint x="880" y="1040"/>
+                            <mxPoint x="860" y="1040"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-hard-success" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-delete-record" target="act-success" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow-to-end" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-success" target="end" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="600" as="sourcePoint"/>
+                        <mxPoint x="450" y="550" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

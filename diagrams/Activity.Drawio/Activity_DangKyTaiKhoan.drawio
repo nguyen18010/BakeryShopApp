@@ -1,0 +1,165 @@
+﻿<mxfile host="65bd71144e">
+    <diagram name="Activity - User Registration" id="activity-registration">
+        <mxGraphModel dx="896" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="800" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" value="Activity Diagram - Đăng ký Tài khoản" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=16;fontStyle=1" parent="1" vertex="1">
+                    <mxGeometry x="250" y="20" width="300" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="start" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="70" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="act1" value="Truy cập trang đăng ký" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="140" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act2" value="Điền form đăng ký" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="220" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="decision1" value="Email hợp lệ&#xa;&amp; không trùng?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="300" width="140" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-error1" value="Hiển thị lỗi email" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="315" width="130" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="decision2" value="Mật khẩu&#xa;đủ mạnh?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="335" y="420" width="130" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-error2" value="Hiển thị lỗi mật khẩu" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="435" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act3" value="Mã hóa mật khẩu" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="540" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act4" value="Lưu vào database" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="620" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="decision3" value="Lưu thành&#xa;công?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" parent="1" vertex="1">
+                    <mxGeometry x="340" y="700" width="120" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="act-error3" value="Hiển thị lỗi hệ thống" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" parent="1" vertex="1">
+                    <mxGeometry x="560" y="715" width="140" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act5" value="Gửi email chào mừng" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="820" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="act6" value="Chuyển đến trang đăng nhập" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="320" y="900" width="160" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="end" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#000000;strokeWidth=3;" parent="1" vertex="1">
+                    <mxGeometry x="380" y="970" width="40" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="end-inner" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#ffffff;" parent="1" vertex="1">
+                    <mxGeometry x="387" y="977" width="26" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="flow1" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="start" target="act1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow2" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act1" target="act2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act2" target="decision1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow4" value="Không" style="endArrow=classic;html=1;rounded=0;" parent="1" source="decision1" target="act-error1" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="loop1" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" parent="1" source="act-error1" target="act2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="625" y="258"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow5" value="Có" style="endArrow=classic;html=1;rounded=0;" parent="1" source="decision1" target="decision2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow6" value="Không" style="endArrow=classic;html=1;rounded=0;" parent="1" source="decision2" target="act-error2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="loop2" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="act-error2" target="act2" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="480" y="240" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="720" y="460"/>
+                            <mxPoint x="720" y="245"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow7" value="Có" style="endArrow=classic;html=1;rounded=0;" parent="1" source="decision2" target="act3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow8" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act3" target="act4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow9" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act4" target="decision3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow10" value="Không" style="endArrow=classic;html=1;rounded=0;" parent="1" source="decision3" target="act-error3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="450" y="450" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="loop3" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act-error3" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="500" as="sourcePoint"/>
+                        <mxPoint x="480" y="230" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="750" y="740"/>
+                            <mxPoint x="750" y="230"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow11" value="Có" style="endArrow=classic;html=1;rounded=0;" parent="1" source="decision3" target="act5" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="650" as="sourcePoint"/>
+                        <mxPoint x="450" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow12" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act5" target="act6" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="650" as="sourcePoint"/>
+                        <mxPoint x="450" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="flow13" value="" style="endArrow=classic;html=1;rounded=0;" parent="1" source="act6" target="end" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="400" y="650" as="sourcePoint"/>
+                        <mxPoint x="450" y="600" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
